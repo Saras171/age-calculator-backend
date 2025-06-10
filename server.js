@@ -22,7 +22,7 @@ app.use(express.json());
 app.use('/api/age', ageRoutes);
 
 // Define the port from environment or default to 5000
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT ;
 
 // Start the server and listen on the defined port
 app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
