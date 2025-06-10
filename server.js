@@ -21,6 +21,10 @@ app.use(express.json());
 // Mount age-related routes at the /api/age path
 app.use('/api/age', ageRoutes);
 
+app.get('/', (req,res) =>{
+res.send('Age calculator Backend Server is running live.');
+});
+
 // Define the port from environment or default to 5000
 const PORT = process.env.PORT ;
 
